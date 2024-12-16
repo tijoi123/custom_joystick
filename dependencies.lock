@@ -1,0 +1,31 @@
+dependencies:
+  espressif/esp_tinyusb:
+    component_hash: f151d680d6847bfcfd5d8eb6d1c3ff926c208e6b963b2e83643a141bc70baa15
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    - name: espressif/tinyusb
+      registry_url: https://components.espressif.com/
+      require: public
+      version: '>=0.14.2'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.4.4
+  espressif/tinyusb:
+    dependencies: []
+    source:
+      path: C:\Users\ASUS\Downloads\finaljoystick_code\finalCustomJoyStick2\CustomJoyStick\components\espressif__tinyusb
+      type: local
+    version: 0.15.0~10
+  idf:
+    source:
+      type: idf
+    version: 5.3.0
+direct_dependencies:
+- espressif/esp_tinyusb
+- idf
+manifest_hash: 8b34a3f50017480d4b486efb133beb04f6e3726c2093706e8588444f631ef754
+target: esp32s3
+version: 2.0.0
